@@ -12,7 +12,7 @@ input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointe
 
 @font-face{
     font-family: IranNastaliq;
-    src:url(../fonts/ir/IranNastaliq.ttf);
+    src:url(../fonts/IranNastaliq.ttf);
 }
 
 body{
