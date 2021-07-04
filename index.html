@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fa/css/all.min.css">
+  <title>Heyat</title>
 </head>
 
 <body>
@@ -36,54 +37,55 @@
           <div>امام علی (ع)</div>
         </div>
 
-        <div class="slideshow-container">
+        <div id="slideshow-container">
 
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/1.jpg" style="width: 100%;" />
-            <div class="text">این عنوان پست اول است</div>
+          <div class="sliders" id="sliders">
+            <div class="slider active">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img id="imgsliders" src="css/img/1.jpg" width="100%">
+              <div class="text">متن اسلاید اول</div>
+            </div>
+            <div class="slider">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="css/img/2.jpg" width="100%">
+              <div class="text">متن اسلاید دوم</div>
+            </div>
+            <div class="slider">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="css/img/3.jpg" width="100%">
+              <div class="text">متن اسلاید سوم</div>
+            </div>
+
+            <span id="dotafterthis"></span>
+
           </div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/2.jpg" style="width: 100%;" />
-            <div class="text">این عنوان پست دوم است</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/3.jpg" style="width: 100%;" />
-            <div class="text">این عنوان پست سوم است</div>
-          </div>
-
-        </div>
-        <div style="text-align: center;">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
         </div>
 
         <div class="post-box">
           <div class="box-title">
-            <div class="picn"></div>
+            <span class="fa-stack fa-2x">
+              <i class="fa-light fa-seal fa-stack-2x" style="color: #ffb22f;"></i>
+              <i class="fa-light fa-octagon fa-stack-1x fa-inverse" style="color: #ffb22f;"></i>
+            </span>
             <span>جدید ترین ها</span>
           </div>
           <div class="box-content">
             <div class="newposts">
 
               <div class="lastpost">
-                <img src="img/1.jpg" alt="post1">
+                <img src="css/img/1.jpg" alt="post1">
                 <a href="#" class="titlesp">این یک عنوان تست طولانی است</a>
               </div>
 
               <div class="twomore">
                 <div>
-                  <img src="img/2.jpg" alt="post2">
+                  <img src="css/img/2.jpg" alt="post2">
                   <a href="#" class="titlesp2 titlesp">این یک عنوان تست طولانی است</a>
 
                 </div>
                 <div>
-                  <img src="img/3.jpg" alt="post3">
+                  <img src="css/img/3.jpg" alt="post3">
                   <a href="#" class="titlesp2 titlesp">عنوان</a>
 
                 </div>
@@ -94,7 +96,10 @@
 
         <div class="post-box">
           <div class="box-title">
-            <div class="picn"></div>
+            <span class="fa-stack fa-2x">
+              <i class="fa-light fa-seal fa-stack-2x" style="color: #ffb22f;"></i>
+              <i class="fa-light fa-octagon fa-stack-1x fa-inverse" style="color: #ffb22f;"></i>
+            </span>
             <span>پربازدید ها</span>
           </div>
           <div class="box-content">
@@ -102,18 +107,18 @@
             <div class="newposts">
 
               <div class="lastpost">
-                <img src="img/1.jpg" alt="post1">
+                <img src="css/img/1.jpg" alt="post1">
                 <a href="#" class="titlesp">این یک عنوان تست طولانی است</a>
               </div>
 
               <div class="twomore">
                 <div>
-                  <img src="img/2.jpg" alt="post2">
+                  <img src="css/img/2.jpg" alt="post2">
                   <a href="#" class="titlesp2 titlesp">این یک عنوان تست طولانی است</a>
 
                 </div>
                 <div>
-                  <img src="img/3.jpg" alt="post3">
+                  <img src="css/img/3.jpg" alt="post3">
                   <a href="#" class="titlesp2 titlesp">عنوان</a>
 
                 </div>
@@ -125,13 +130,14 @@
       <div id="left">
 
         <div class="asidet">
-          <div class="ficn"></div>
+          <div class="fa-solid fa-caret-down fa-4x ficn " style="color: #ffb22f;"></div>
+
         </div>
         <div class="asidec">
 
         </div>
         <div class="asidet">
-          <div class="ficn"></div>
+          <div class="fa-solid fa-caret-down fa-4x ficn " style="color: #ffb22f;"></div>
         </div>
         <div class="asidec">
 
@@ -144,42 +150,20 @@
 
   <footer>
     <div>
-      <a href="#">Telegram</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
-      <p>همه حقوق و اینجور جریانات محفوظ میباشد.</p>
+      <i class="fa-brands fa-telegram fa-3x"></i>
+      <i class="fa-brands fa-instagram-square fa-3x"></i>
+      <i class="fa-brands fa-whatsapp fa-3x"></i>
+
+      <p>
+        طراحی شده با <i class="fa-brands fa-html5"></i> , <i class="fa-brands fa-css3-alt"></i> و قلبی مهربان <i
+          class="fa-solid fa-heart" style="color: red;"></i>
+      </p>
     </div>
   </footer>
 
 </body>
-<script>
 
-  var slideIndex = 0;
-  ShowSlides();
-  function ShowSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-
-    setTimeout(ShowSlides, 5 * 1000);
-  }
-
-</script>
+<script src="js/slider.js"></script>
+<script src="js/scirpt.js"></script>
 
 </html>
